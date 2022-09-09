@@ -25,12 +25,17 @@
 
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+
+  --black-color: #000000;
   --white-color: #ffffff;
   --blue-color: #2196f3;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --dark-grey-color: #2f303a;
+  --header-border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 
 /* 
@@ -59,11 +64,11 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  color: #000000;
+  color: var(--black-color);
 }
 
 .logo-blue {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 
 .logo.lower {
@@ -113,7 +118,7 @@ img {
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ececec;
+  border-bottom-color: var(--header-border-color);
 }
 
 .navigation.container,
@@ -204,7 +209,7 @@ img {
 }
 
 .contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contacts-color);
 }
 
 /* Налаштування <main> для index.html */
@@ -350,7 +355,7 @@ img {
   background-color: var(--primary-background-color);
 }
 
-.flex-schedule.list {
+.buttons {
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -401,9 +406,9 @@ img {
 
 .portfolio-box {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
 }
 
 .project-name {
