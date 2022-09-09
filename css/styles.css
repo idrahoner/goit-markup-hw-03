@@ -38,22 +38,6 @@
   --portfolio-border-color: #eeeeee;
 }
 
-/* 
--
--
--
- */
-.temporary-box {
-  height: 300px;
-  background-color: tomato;
-}
-/* 
--
--
--
- */
-
-/* Налаштування логотипу */
 .logo {
   display: block;
 
