@@ -38,6 +38,63 @@
   --portfolio-border-color: #eeeeee;
 }
 
+/* Налаштування основних позицій */
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Налаштування логотипу */
+
 .logo {
   display: block;
 
@@ -57,42 +114,6 @@
 
 .logo.lower {
   color: var(--white-color);
-}
-
-/* Налаштування основних позицій */
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--white-color);
-  color: var(--primary-text-color);
-}
-
-.list {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 
 /* Налаштування <header> */
@@ -137,6 +158,10 @@ img {
 
 .navigation-link {
   color: inherit;
+}
+
+.navigation-link.is-active {
+  color: var(--blue-color);
 }
 
 .contacts-wrapper {
@@ -245,16 +270,16 @@ img {
 
 /* Налаштування секції "Переваги" */
 
+.benefits {
+  padding-bottom: 0;
+}
+
 .features-item {
   width: 270px;
 }
 
 .features-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.transparent-title {
-  color: rgba(0, 0, 0, 0.2);
 }
 
 .features-title {
@@ -292,6 +317,7 @@ img {
 }
 
 /* Налаштування секції "Про команду" */
+
 .section-team {
   background-color: var(--secondary-background-color);
 }
@@ -309,8 +335,9 @@ img {
   margin-right: 30px;
 }
 
-.team-image {
-  margin-bottom: 30px;
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -323,9 +350,6 @@ img {
 }
 
 .team-position {
-  margin-bottom: 30px;
-
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -358,17 +382,14 @@ img {
 
   color: inherit;
   background-color: var(--secondary-background-color);
+
+  cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  padding-left: 25px;
-  padding-right: 25px;
-
   color: var(--white-color);
   background-color: var(--blue-color);
-
-  cursor: pointer;
 }
 
 .flex-wrap {
@@ -390,9 +411,8 @@ img {
 
 .portfolio-box {
   padding: 20px 24px;
-  border-left: 1px solid var(--portfolio-border-color);
-  border-right: 1px solid var(--portfolio-border-color);
-  border-bottom: 1px solid var(--portfolio-border-color);
+  border: 1px solid var(--portfolio-border-color);
+  border-top: none;
 }
 
 .project-name {
